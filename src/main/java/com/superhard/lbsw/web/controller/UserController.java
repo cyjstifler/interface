@@ -1,5 +1,7 @@
 package com.superhard.lbsw.web.controller;
 
+import java.util.Map;
+
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import org.apache.logging.log4j.LogManager;
@@ -34,8 +36,9 @@ public class UserController {
 	@RequestMapping(value = "/login", method=RequestMethod.POST,consumes="application/json; charset=UTF-8",
 			produces="application/json; charset=UTF-8")
 	@ResponseBody 
-	public String login(HttpServletRequest request,@RequestBody String str){
-//		Map <String ,String > map = gson.fromJson(str, new TypeToken<Map<String,String>>(){}.getType());
+	public String login(HttpServletRequest request,@RequestBody String data){
+		String clearData = 
+		Map <String ,String > map = gson.fromJson(data, new TypeToken<Map<String,String>>(){}.getType());
 //		String userName = map.get("userName");
 //		String password = map.get("password");
 //		userService.checkPassword(userName, password);

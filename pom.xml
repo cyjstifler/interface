@@ -106,9 +106,6 @@
 		    <version>0.1.7</version>
 		</dependency>
   		
-  		
-  		
-  		
   		<!-- https://mvnrepository.com/artifact/net.sourceforge.jexcelapi/jxl -->
 		<dependency>
 		    <groupId>net.sourceforge.jexcelapi</groupId>
@@ -187,11 +184,6 @@
             <artifactId>log4j-core</artifactId>  
             <version>${log4j.version}</version>  
         </dependency>  
-  		<dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-web</artifactId>
-            <version>${log4j.version}</version> 
-        </dependency>
         
         <!-- mysql的依赖 -->  
         <dependency>  
